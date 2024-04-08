@@ -1,0 +1,152 @@
+@media screen and (min-width: 1100px ){
+    .nav-m{
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .nav-logo{
+       content: url('./src/img/logo.svg');
+       margin-right: 0;
+       margin-left: 4rem;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    .nav-menu{
+       display: flex;
+    }
+    #navBtn a div{
+        margin-right: 4rem;
+        margin-left: 0;
+    }
+    
+    #nav{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    .banner{
+        display: flex;
+        margin-right: 7rem;
+     }
+}
+
+@media screen and (min-width: 1300px){
+    .content-f{
+        width: 30%;
+        margin-right: 15rem;
+        margin-left: 7rem;
+        text-align: left;
+     }
+     .content-f h1 span{
+        font-size: 4.5rem;
+        line-height: 1;
+     }
+
+     .content-f h1 .bhai{
+        font-size: 3.75rem;
+        line-height: 1;
+     }
+     .content-f h1 {
+        margin-top: 1.25rem;
+     }
+
+}
+
+@media screen and (min-width: 1300px){
+    .content-btn1{
+        display: flex;
+        justify-content: start;
+        margin-right: 0;
+        margin-left: 0;
+     }
+}
+
+@media screen and (min-width: 1300px){
+    .content-btn2{
+        display: flex;
+        justify-content: start;
+        margin-right: 0;
+        margin-left: 0;
+     }
+}
+
+@media screen and (min-width: 1461px){
+    .content-f h1 .bhai{
+        font-size: 4.5rem;
+        line-height: 1;
+     }
+}
+
+@media screen and (min-width: 440px ){
+    .about{
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+}
+@media screen and (min-width: 990px ){
+    .mentor-main{
+       display: flex;
+       flex-wrap: nowrap;
+    }
+}
+@media screen and (min-width: 1200px ){
+    .faq-week{
+       border-left-width: 2px;
+       padding-left: 75px;
+    }
+}
+@media screen and (min-width: 1200px ){
+    .faq-week2{
+        border-bottom-width: 0px;
+    }
+}
+@media screen and (min-width: 1200px ){
+    .faq-who{
+        font-size: 3rem/* 48px */;
+        line-height: 1;
+    }
+}
+@media screen and (min-width: 1300px){
+    .faq-ban{
+        display: flex;
+        margin-right: 7rem;
+     }
+     .faq-head{
+        text-align: left;
+     }
+}
+@media screen and (min-width: 900px){
+    .bhot-mehnat{
+        flex-wrap: nowrap;
+     }
+     
+}
+@media screen and (min-width: 900px){
+    .down-logo{
+        display: inline;
+     }
+     
+}
+@media screen and (min-width: 371px){
+    .faq-week-time{
+        font-size: 1rem; /* 16px */
+line-height: 1.5rem;
+     }
+     
+}
+
+
+
+
+h1 {
+    display: inline-block;
+  }
+  hr {
+    border-width: 2px ;
+  }
+  
+  

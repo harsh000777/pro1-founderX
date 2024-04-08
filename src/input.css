@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+   
+    
+    .mentor-odd {
+      @apply mx-6 flex justify-center items-center bg-people2 border-btn-color border-2 h-auto w-auto rounded-2xl;
+    }
+    .mentor-even {
+      @apply mx-6 flex justify-center items-center bg-people border-btn-color border-2 h-auto w-auto rounded-2xl;
+    }
+    .mentor-name {
+      @apply mx-7 my-2 text-white font-semibold;
+    }
+    .mentor-brand {
+      @apply text-btn-color font-normal;
+    }
+    .text-xxl {
+      @apply text-[2.50rem] leading-10;
+    }
+  }

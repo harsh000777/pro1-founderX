@@ -7,17 +7,23 @@
     <title>FounderX</title>
     <link rel="icon" href="./src/img/single-header-logo.svg">
     <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 
 <body class="bg-main-color">
-    <div class=" h-full w-screen " id="landpage">
-        <div class="flex justify-around items-center text-white h-20  bg-nav border-b-2 border-bord " id="nav">
-            <div class="ml-16" id="navLogo">
-                <object data="./src/img/logo.svg" type="image/svg+xml"></object>
+
+    <div class=" h-full w-full " id="landpage">
+        <div class="w-full flex justify-between items-center text-white h-20  bg-nav border-b-2 border-bord " id="nav">
+            <div class="mx-7 nav-logo" id="navLogo">
+                <object data="./src/img/single-header-logo.svg" type="image/svg+xml"></object>
             </div>
-            <div class="" id="navBar">
-                <ul class="flex cursor-pointer">
+
+            <div class="mx-7 nav-m" id="nav-menu">
+                <a href="./menu.html"> <img src="./src/img/header-menu-icon.svg" class="w-7"> </a>
+            </div>
+            <div class=" nav-menu  hidden" id="navBar">
+                <ul class=" flex cursor-pointer">
                     <li class="mx-4 font-semibold"> <a href="#about"> ABOUT </a> </li>
                     <li class="mx-4 font-semibold"> <a href="#"> WHY JOIN </a> </li>
                     <li class="mx-4 font-semibold"> <a href="#MENTORS"> MENTORS </a> </li>
@@ -26,50 +32,54 @@
                     <li class="mx-4 font-semibold"> <a href="#FAQ"> FAQ </a></li>
                 </ul>
             </div>
-            <div class="" id="navBtn">
+            <div class=" hidden nav-menu" id="navBtn">
                 <a href="#">
                     <div
-                        class=" mr-16 h-12 w-36 border-2 border-bord flex items-center justify-center text-center text-black bg-btn-color font-semibold rounded-lg">
+                        class=" mx-7 h-12 w-36 border-2 border-bord flex items-center justify-center text-center text-black bg-btn-color font-semibold rounded-lg">
                         JOIN WAITLIST
                     </div>
                 </a>
             </div>
         </div>
 
-        <div class="w-full h-screen" id="main">
-            <div class="flex mt-28" id="main-content">
-                <div class=" w-['-50%'] mx-60 ml-28  text-white ">
-                    <h1 class="text-7xl leading-none font-bold"> BECOME A <br>
-                        <span> STARTUP </span> <br>
-                        <span> FOUNDER </span> <br>
-                        <hr class="border-bord border-2  "> <span class="text-high">IN 12 WEEKS </span>
-                        <hr class="border-bord border-2">
+        <div class="w-full h-full " id="main">
+            <div class="flex mt-24" id="main-content">
+                <div class=" w-full  mx-2  text-white text-center content-f ">
+                    <h1 class="font-bold  leading-none "> <span class="text-6xl"> BECOME A </span> <br>
+                        <span class="text-5xl "> STARTUP </span> <br>
+                        <span class="text-6xl"> FOUNDER </span> <br>
+                        <hr class="border-bord border-2 mt-5 "> <span class="text-high text-5xl bhai">IN 12 WEEKS
+                        </span>
+                        <hr class="border-bord border-2 ">
                     </h1>
-                    <div class="my-8 ">
+                    <div class="my-8 mt-10 mx-3 flex justify-center content-btn1">
                         <div
-                            class="flex text-xs bg-bg-other border-2 border-bord text-white px-5 py-3 rounded-lg cursor-pointer">
+                            class="flex justify-center text-xs bg-bg-other border-2 w-[25rem] border-bord text-white px-5 py-3 rounded-lg cursor-pointer">
                             <img src="./src/img/Group-4212-1.svg"> &nbsp; APPLICATION CLOSED &nbsp; <img
                                 src="./src/img/Group-1000004885.svg">&nbsp; PROGRAM STARTS: 24TH FEB 2024
                         </div>
                     </div>
-                    <div class="flex  my-8 ">
-                        <div class=" bg-white border-2 border-white text-black px-5 py-3 rounded-lg cursor-pointer">JOIN
+                    <div class="flex justify-center  my-8 mx-3 content-btn2 ">
+                        <div
+                            class=" bg-white border-2 mr-4 border-white text-black px-5 py-3 rounded-lg cursor-pointer">
+                            JOIN
                             WAITLIST</div>
-                        <div class="  border-2 border-bord  text-high mx-5 px-5 py-3 rounded-lg cursor-pointer">DOWNLOAD
+                        <div class="  border-2 border-bord  text-high mx-2x px-5 py-3 rounded-lg cursor-pointer">
+                            DOWNLOAD
                             CURRICULUM</div>
                     </div>
 
                 </div>
 
-                <div class=" ml-40 mr-20">
-                    <img src="./src/img/banner-img.svg " class="">
+                <div class=" hidden banner ml-36">
+                    <img src="./src/img/banner-img.svg ">
                 </div>
 
 
             </div>
 
             <div class="">
-                <img src="./src/img/Layer-1.svg" class="w-screen">
+                <img src="./src/img/Layer-1.svg" class="w-full">
             </div>
 
             <hr class=" border-bord">
@@ -80,170 +90,193 @@
 
     </div>
 
-    <div class="h-full w-screen " id="about">
-        <div class="flex justify-center items-center">
-            <div class="mx-10 my-10 py-12 px-16  bg-white border-bord border-1 h-[80%] w-[70%] rounded-lg">
+    <div class="h-full w-full " id="about">
+        <div class="flex justify-center my-10 ">
+            <div class="  py-10   bg-white border-bord border-1 h-auto w-[84%] rounded-lg">
                 <div class=" text-center">
-                    <h1 class="text-other text-5xl font-bold leading-normal"> ABOUT <span class="text-btn-color">
+                    <h1 class="text-other text-5xl font-bold w-full leading-normal"> ABOUT <span
+                            class="text-btn-color text-center ">
                             FOUNDERX </span> </h1>
-                    <p class="">The worlds need your creativity and ingenuity. Don't put your dreams on hold. <br> Start
+                    <p class="px-2">The worlds need your creativity and ingenuity. Don't put your dreams on hold. <br>
+                        Start
                         your founder's journey today!</p>
                 </div>
 
-                <div class="flex justify-center text-black mt-20">
-                    <div class=" flex justify-center h-80 w-96 border-2 border-main-color bg-bg-other rounded-lg"><img
-                            src="./src/img/banner-img.svg" class="h-80 w-80 "> </div>
-                    <div class=" flex  ">
-                        <div
-                            class="h-80 w-96  mx-10 border-2 border-bord py-6 px-8 bg-bord bg-opacity-10 rounded-lg flex flex-col">
-                            <div class="flex text-base w-full h-1/4"> 
-                                <img src="./src/img/list-icon.svg" class="h-4 w-5 mt-[5px]">
-                                <p> Master
-                                    a structured approach to building a tech venture </p> <br>
-                            </div>
-                            <div class="flex text-base w-full h-1/4"> 
-                                <img src="./src/img/list-icon.svg" class="h-4 w-5 mt-[5px]">
-                                <p> Master
-                                    a structured approach to building a tech venture </p> <br>
-                            </div>
-                            <div class="flex text-base w-full h-1/4"> 
-                                <img src="./src/img/list-icon.svg" class="h-4 w-5 mt-[5px]">
-                                <p> Master
-                                    a structured approach to building a tech venture </p> <br>
-                            </div>
-                            <div class="flex text-base w-full h-1/4"> 
-                                <img src="./src/img/list-icon.svg" class="h-4 w-5 mt-[5px]">
-                                <p> Master
-                                    a structured approach to building a tech venture </p> <br>
-                            </div>
-
+                <div class="px-6 flex justify-between gap-10 flex-wrap text-black mt-20 w-full mentor-main">
+                    <div
+                        class=" flex justify-center h-80 w-1/2 border-2 border-main-color bg-bg-other rounded-lg max-lg:w-full">
+                        <img src="./src/img/banner-img.svg" class="h-80 w-80 "> </div>
+                    <div
+                        class="h-80 w-1/2 border-2 border-bord py-6 px-8 bg-bord bg-opacity-10 rounded-lg flex flex-col max-lg:w-full">
+                        <div class="flex text-base w-full h-1/4">
+                            <img src="./src/img/list-icon.svg" class="h-4 w-5 mt-[5px]">
+                            <p> Master
+                                a structured approach to building a tech venture </p> <br>
                         </div>
+
+                        <div class="flex text-base w-full h-1/4">
+                            <img src="./src/img/list-icon.svg" class="h-4 w-5 mt-[5px]">
+                            <p> Master
+                                a structured approach to building a tech venture </p> <br>
+                        </div>
+                        <div class="flex text-base w-full h-1/4">
+                            <img src="./src/img/list-icon.svg" class="h-4 w-5 mt-[5px]">
+                            <p> Master
+                                a structured approach to building a tech venture </p> <br>
+                        </div>
+                        <div class="flex text-base w-full h-1/4">
+                            <img src="./src/img/list-icon.svg" class="h-4 w-5 mt-[5px]">
+                            <p> Master
+                                a structured approach to building a tech venture </p> <br>
+                        </div>
+
                     </div>
                 </div>
 
             </div>
         </div>
-        <hr class=" border-bord ">
+        <hr class=" border-bord mt-16">
     </div>
 
-    <div class="h-full w-screen " id="MENTORS">
-        <div class="text-center mt-6">
+    <div class="h-full w-full " id="MENTORS">
+        <div class="text-center mt-12">
             <div class="text-center mt-2 text-5xl font-medium text-white">COHORT 2 SPEAKERS &
                 <span class="text-btn-color">MENTORS</span>
             </div>
-            <div class="text-center mt-3 mb-16 text-base  text-white">
+            <div class="text-center mt-3 mb-8 mx-2 text-base  text-white">
                 Learn from real-world, case-based exapmles brought to life by unicorn founders, serial entrepreneurs and
                 top VCs.
             </div>
 
         </div>
 
-        <div class="flex justify-around">
+        <div class="flex justify-around flex-wrap w-full ">
             <div class="text-start">
-                <div class=" mx-6 flex justify-center items-center bg-people2 border-btn-color border-2 h-auto w-auto rounded-2xl ">
-                    <img src="./src/img1.png" class=" rounded-2xl">
+                <div
+                    class=" flex justify-center items-center bg-people2 border-btn-color border-2 h-auto w-full rounded-2xl ">
+                    <img src="./src/img1.png" class=" rounded-2xl w-full">
                 </div>
-                <div class="mx-7 my-2 text-white font-semibold">Aakrit Vaish <br> <span class="text-btn-color font-normal">Haptik</span></div>
+                <div class="my-2 text-white font-semibold">Aakrit Vaish <br> <span
+                        class="text-btn-color font-normal">Haptik</span></div>
             </div>
 
             <div class="text-start">
-                <div class=" mx-6 flex justify-center items-center bg-people border-btn-color border-2 h-auto w-auto rounded-2xl ">
-                    <img src="./src/img2.png" class=" rounded-2xl">
+                <div
+                    class="  flex justify-center items-center bg-people border-btn-color border-2 h-auto w-full rounded-2xl ">
+                    <img src="./src/img2.png" class=" rounded-2xl w-full">
                 </div>
-                <div class="mx-7 my-2 text-white font-semibold">Gaurav Khatri <br> <span class="text-btn-color font-normal">Noise</span></div>
+                <div class=" my-2 text-white font-semibold">Gaurav Khatri <br> <span
+                        class="text-btn-color font-normal">Noise</span></div>
             </div>
 
             <div class="text-start">
-                <div class=" mx-6 flex justify-center items-center bg-people2 border-btn-color border-2 h-auto w-auto rounded-2xl ">
-                    <img src="./src/img3.png" class=" rounded-2xl">
+                <div
+                    class=" flex justify-center items-center bg-people2 border-btn-color border-2 h-auto w-full rounded-2xl ">
+                    <img src="./src/img3.png" class=" rounded-2xl w-full">
                 </div>
-                <div class="mx-7 my-2 text-white font-semibold">Gopal Srinivasan <br> <span class="text-btn-color font-normal">TVS Capital Funds</span></div>
+                <div class=" my-2 text-white font-semibold">Gopal Srinivasan <br> <span
+                        class="text-btn-color font-normal">TVS Capital Funds</span></div>
             </div>
 
             <div class="text-start">
-                <div class=" mx-6 flex justify-center items-center bg-people border-btn-color border-2 h-auto w-auto rounded-2xl ">
-                    <img src="./src/img4.png" class=" rounded-2xl">
+                <div
+                    class=" flex justify-center items-center bg-people border-btn-color border-2 h-auto w-full rounded-2xl ">
+                    <img src="./src/img4.png" class=" rounded-2xl w-full">
                 </div>
-                <div class="mx-7 my-2 text-white font-semibold">Vishesh Kurana <br> <span class="text-btn-color font-normal">Shiprocket</span></div>
-            </div>
-
-
-        </div>
-
-        <div class=" my-8 flex justify-around">
-            <div class="text-start">
-                <div class=" mx-6 flex justify-center items-center bg-people2 border-btn-color border-2 h-auto w-auto rounded-2xl ">
-                    <img src="./src/img5.png" class=" rounded-2xl">
-                </div>
-                <div class="mx-7 my-2 text-white font-semibold">Sanket Shah <br> <span class="text-btn-color font-normal">Invideo</span></div>
-            </div>
-
-            <div class="text-start">
-                <div class=" mx-6 flex justify-center items-center bg-people border-btn-color border-2 h-auto w-auto rounded-2xl ">
-                    <img src="./src/img6.png" class=" rounded-2xl">
-                </div>
-                <div class="mx-7 my-2 text-white font-semibold"> Ankit Agrawal <br> <span class="text-btn-color font-normal">InsuranceDekho</span></div>
-            </div>
-
-            <div class="text-start">
-                <div class=" mx-6 flex justify-center items-center bg-people2 border-btn-color border-2 h-auto w-auto rounded-2xl ">
-                    <img src="./src/img7.png" class=" rounded-2xl">
-                </div>
-                <div class="mx-7 my-2 text-white font-semibold"> Manish Chowdhary <br> <span class="text-btn-color font-normal">WOW Skin Sciences</span></div>
-            </div>
-
-            <div class="text-start">
-                <div class=" mx-6 flex justify-center items-center bg-people border-btn-color border-2 h-auto w-auto rounded-2xl ">
-                    <img src="./src/img8.png" class=" rounded-2xl">
-                </div>
-                <div class="mx-7 my-2 text-white font-semibold"> Ankit Nagori <br> <span class="text-btn-color font-normal">Curefoods</span></div>
+                <div class="my-2 text-white font-semibold">Vishesh Kurana <br> <span
+                        class="text-btn-color font-normal">Shiprocket</span></div>
             </div>
 
 
         </div>
-        <hr class="border-btn-color">
+        <div class="  flex justify-around flex-wrap w-full">
+            <div class="text-start">
+                <div
+                    class="  flex justify-center items-center bg-people2 border-btn-color border-2 h-auto w-full rounded-2xl ">
+                    <img src="./src/img5.png" class=" rounded-2xl w-full">
+                </div>
+                <div class=" my-2 text-white font-semibold">Sanket Shah <br> <span
+                        class="text-btn-color font-normal">Invideo</span></div>
+            </div>
+
+            <div class="text-start">
+                <div
+                    class="  flex justify-center items-center bg-people border-btn-color border-2 h-auto w-full rounded-2xl ">
+                    <img src="./src/img6.png" class=" rounded-2xl w-full">
+                </div>
+                <div class=" my-2 text-white font-semibold"> Ankit Agrawal <br> <span
+                        class="text-btn-color font-normal">InsuranceDekho</span></div>
+            </div>
+
+            <div class="text-start">
+                <div
+                    class="  flex justify-center items-center bg-people2 border-btn-color border-2 h-auto w-full rounded-2xl ">
+                    <img src="./src/img7.png" class=" rounded-2xl w-full">
+                </div>
+                <div class=" my-2 text-white font-semibold"> Manish Chowdhary <br> <span
+                        class="text-btn-color font-normal">WOW Skin Sciences</span></div>
+            </div>
+
+            <div class="text-start">
+                <div
+                    class="  flex justify-center items-center bg-people border-btn-color border-2 h-auto w-full rounded-2xl ">
+                    <img src="./src/img8.png" class=" rounded-2xl w-full">
+                </div>
+                <div class=" my-2 text-white font-semibold"> Ankit Nagori <br> <span
+                        class="text-btn-color font-normal">Curefoods</span></div>
+            </div>
+
+
+        </div>
+        <hr class="border-btn-color mt-5">
     </div>
 
-    <div class="h-full w-screen " id="FAQ">
+    <div class="h-full w-full " id="FAQ">
 
         <div class="flex justify-center items-center">
-            <div class="mx-12 mt-16  py-12 px-4 bg-bg-other border-bord border-2 h-auto w-[60%] rounded-3xl">
+            <div class="mx-5 mt-16 py-10 px-5 bg-bg-other border-bord border-2 h-auto w-[85%] rounded-3xl">
 
                 <div class="text-center">
-                    <div class="text-center mt-2 text-5xl font-medium text-white">WHAT SETS <span
+                    <div class="text-center mt-2 text-xxl font-medium text-white faq-who">WHAT SETS <span
                             class="text-btn-color">FOUNDERX APARTS?</span></div>
                     <div class="text-center mt-3 mb-8 text-base   text-white"> FounderX is the only program in India to
                         empower aspiring entrepreneurs to start their founder's journey. </div>
 
                 </div>
 
-                <div class="flex justify-around  items-center">
-                    <div>
-                        <div class=" mx-12 my-4  h-auto w-full py-3 px-2  font-semibold text-xl text-white">LEARN BY
-                            DOING</div>
-                        <div
-                            class=" mx-12 my-4  h-auto w-full py-3 px-2 border-btn-color border-2 bg-white rounded-lg font-semibold text-base ">
-                            <div class="flex text-base w-full h-1/4">
-                                <img src="./src/img/Group-5429.svg" class="h-6 w-6 mt-[3px]">&nbsp;&nbsp;
-                                <p> Hands-On Workshops With Assignment </p> <br>
-                            </div>
+                <div class="flex justify-around  flex-wrap items-center ">
+                    <div class="">
+                        <div class=" text-center w-full font-semibold text-xl text-white faq-head">LEARN BY DOING
                         </div>
                         <div
-                            class=" mx-12 my-4  h-auto w-full py-3 px-2 border-btn-color border-2 bg-white rounded-lg font-semibold text-base ">
-                            <div class="flex text-base w-full h-1/4">
-                                <img src="./src/img/Group-5431.svg" class="h-6 w-6 mt-[3px]">&nbsp;&nbsp;
-                                <p> Capstone projects </p> <br>
-                            </div>
+                            class=" my-4  h-auto w-full py-3 px-2 border-btn-color border-2 bg-white rounded-lg font-semibold text-base ">
+                            <a href="#">
+                                <div class="flex text-base w-full h-1/4 cursor-pointer">
+                                    <img src="./src/img/Group-5429.svg" class="h-7 w-7 ">&nbsp;&nbsp;
+                                    <p> Hands-On Workshops With Assignment </p> <br>
+                                </div>
+                            </a>
                         </div>
                         <div
-                            class=" mx-12 my-4  h-auto w-full py-3 px-2 border-btn-color border-2 bg-white rounded-lg font-semibold text-base ">
-                            <div class="flex text-base w-full h-1/4">
-                                <img src="./src/img/Group-28.svg" class="h-6 w-6 mt-[3px]">&nbsp;&nbsp;
-                                <p> Team Mentorship </p> <br>
-                            </div>
+                            class=" my-4  h-auto w-full py-3 px-2 border-btn-color border-2 bg-white rounded-lg font-semibold text-base ">
+                            <a href="#">
+                                <div class="flex text-base w-full h-1/4 cursor-pointer">
+                                    <img src="./src/img/Group-5431.svg" class="h-7 w-7 ">&nbsp;&nbsp;
+                                    <p> Capstone projects </p> <br>
+                                </div>
+                            </a>
+                        </div>
+                        <div
+                            class=" my-4  h-auto w-full py-3 px-2 border-btn-color border-2 bg-white rounded-lg font-semibold text-base ">
+                            <a href="#">
+                                <div class="flex text-base w-full h-1/4 cursor-pointer">
+                                    <img src="./src/img/Group-28.svg" class="h-7 w-7 ">&nbsp;&nbsp;
+                                    <p> Team Mentorship </p> <br>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <div class=" mr-12 ml-12 h-[35%] w-[25%] py-3 px-2">
+                    <div class=" mr-12 ml-12 h-[35%] w-[25%] py-3 px-2 hidden faq-ban">
                         <img src="./src/img/banner-img.svg">
                     </div>
                 </div>
@@ -258,183 +291,196 @@
             <div class=" my-12  py-12 px-4 bg-bg-other h-auto w-full ">
 
                 <div class="text-center">
-                    <div class="text-center mt-2 text-5xl font-medium text-white"> WEEKLY
+                    <div class="text-center mt-2 text-xxl font-medium text-white"> WEEKLY
                         <span class="text-btn-color"> SCHEDULE </span>
                     </div>
-                    <div class="text-center mt-3 mb-8 text-base   text-white"> 
+                    <div class=" mt-3 mb-8 text-base   text-white">
                         These are weekly recurring sessions and learning activites <br>
-                        scheduled throughout the duration of this course. 
+                        scheduled throughout the duration of this course.
                     </div>
 
                 </div>
 
-                <div class="flex justify-around  items-center">
-                    <div class="pl-20 pr-16">
-                        <div class="text-btn-color font-semibold">CORE SESSIONS</div>
+                <div class="flex justify-around flex-wrap items-center ">
+
+                    <div class=" border-b-2 border-btn-color py-4 faq-week2">
+                        <div class="text-btn-color font-semibold">CORE SESSIONS
+                        </div>
                         <div class="text-white text-sm mt-2 mb-3">Live, Hands-On, Interactive Sessions & <br>
-                             Workshops  </div>
+                            Workshops </div>
 
                         <hr class="border-btn-color border-dashed">
 
                         <div class="text-btn-color font-semibold">TIMINGS:</div>
 
-                        <div class="flex text-base  h-1/4 my-3">
+                        <a href="#">
+                            <div class="flex text-base  h-1/4 my-3 cursor-pointer">
 
-                            <img src="./src/img/calender-binding.png" class="h-10 w-6 mt-[1px] mr-[-10px]">&nbsp;
-                            <p
-                                class="py-2 px-4 border-btn-color bg-white rounded-md text-center font-semibold text-base ">
-                                Hands-On Workshops With Assignment 
-                            </p>
-                        </div>
-                        <div class="flex text-base  h-1/4 my-3">
+                                <img src="./src/img/calender-binding.png" class="h-10 w-6 mt-[1px] mr-[-10px] ">&nbsp;
+                                <p
+                                    class="py-2 px-4 border-btn-color bg-white rounded-md text-center font-semibold faq-week-time text-sm ">
+                                    Hands-On Workshops With Assignment
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="flex text-base  h-1/4 my-3 cursor-pointer">
 
-                            <img src="./src/img/calender-binding.png" class="h-10 w-6 mt-[1px] mr-[-10px]">&nbsp;
-                            <p
-                                class="py-2 px-4 border-btn-color bg-white rounded-md text-center font-semibold text-base ">
-                                Hands-On Workshops With Assignment 
-                            </p>
-                        </div>
+                                <img src="./src/img/calender-binding.png" class="h-10 w-6 mt-[1px] mr-[-10px]">&nbsp;
+                                <p
+                                    class="py-2 px-4 border-btn-color bg-white rounded-md text-center font-semibold faq-week-time text-sm ">
+                                    Hands-On Workshops With Assignment
+                                </p>
+                            </div>
+                        </a>
 
                     </div>
-                    <div class="border-l-2 border-btn-color  px-20">
+                    <div class=" border-b-2 border-btn-color py-4 faq-week faq-week2 ">
                         <div class="text-btn-color font-semibold">TEAM HUDDLES & MENTORSHIP
                         </div>
-                        <div class="text-white text-sm mt-2 mb-3">Team Huddles & The Group Mentorship  <br>
-                             Will Be Held On Weekdays  </div>
+                        <div class="text-white text-sm mt-2 mb-3">Team Huddles & The Group Mentorship <br>
+                            Will Be Held On Weekdays </div>
 
                         <hr class="border-btn-color border-dashed">
 
                         <div class="text-btn-color font-semibold">TIMINGS:</div>
 
-                        <div class="flex text-base  h-1/4 my-3">
+                        <a href="#">
+                            <div class="flex text-base  h-1/4 my-3 cursor-pointer">
 
-                            <img src="./src/img/calender-binding.png" class="h-10 w-6 mt-[1px] mr-[-10px]">&nbsp;
-                            <p
-                                class="py-2 px-4 border-btn-color bg-white rounded-md text-center font-semibold text-base ">
-                                Hands-On Workshops With Assignment 
-                            </p>
-                        </div>
-                        <div class="flex text-base  h-1/4 my-3">
+                                <img src="./src/img/calender-binding.png" class="h-10 w-6 mt-[1px] mr-[-10px]">&nbsp;
+                                <p
+                                    class="py-2 px-4 border-btn-color bg-white rounded-md text-center font-semibold faq-week-time text-sm ">
+                                    Hands-On Workshops With Assignment
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="flex text-base  h-1/4 my-3 cursor-pointer">
 
-                            <img src="./src/img/calender-binding.png" class="h-10 w-6 mt-[1px] mr-[-10px]">&nbsp;
-                            <p
-                                class="py-2 px-4 border-btn-color bg-white rounded-md text-center font-semibold text-base ">
-                                Hands-On Workshops With Assignment 
-                            </p>
-                        </div>
+                                <img src="./src/img/calender-binding.png" class="h-10 w-6 mt-[1px] mr-[-10px]">&nbsp;
+                                <p
+                                    class="py-2 px-4 border-btn-color bg-white rounded-md text-center font-semibold faq-week-time text-sm ">
+                                    Hands-On Workshops With Assignment
+                                </p>
+                            </div>
+                        </a>
 
                     </div>
-                    <div class="border-l-2 border-btn-color pl-16 pr-20">
+                    <div class=" py-4 border-btn-color faq-week faq-week2 ">
                         <div class="text-btn-color font-semibold">IN-PERSON SESSIONS</div>
                         <div class="text-white text-sm mt-2 mb-3">The Opening Orientation, Starup Tours <br>
-                             And Convocation  </div>
+                            And Convocation </div>
 
                         <hr class="border-btn-color border-dashed">
 
                         <div class="text-btn-color font-semibold">TIMINGS:</div>
 
-                        <div class="flex text-base  h-1/4 my-3">
+                        <a href="#">
+                            <div class="flex text-base  h-1/4 my-3 cursor-pointer">
 
-                            <img src="./src/img/calender-binding.png" class="h-10 w-6 mt-[1px] mr-[-10px]">&nbsp;
-                            <p
-                                class="py-2 px-4 border-btn-color bg-white rounded-md text-center font-semibold text-base ">
-                                Hands-On Workshops With Assignment 
-                            </p>
-                        </div>
-                        <div class="flex text-base  h-1/4 my-3">
+                                <img src="./src/img/calender-binding.png" class="h-10 w-6 mt-[1px] mr-[-10px]">&nbsp;
+                                <p
+                                    class="py-2 px-4 border-btn-color bg-white rounded-md text-center font-semibold faq-week-time text-sm ">
+                                    Hands-On Workshops With Assignment
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="flex text-base  h-1/4 my-3 cursor-pointer">
 
-                            <img src="./src/img/calender-binding.png" class="h-10 w-6 mt-[1px] mr-[-10px]">&nbsp;
-                            <p
-                                class="py-2 px-4 border-btn-color bg-white rounded-md text-center font-semibold text-base ">
-                                Hands-On Workshops With Assignment 
-                            </p>
-                        </div>
+                                <img src="./src/img/calender-binding.png" class="h-10 w-6 mt-[1px] mr-[-10px]">&nbsp;
+                                <p
+                                    class="py-2 px-4 border-btn-color bg-white rounded-md text-center font-semibold faq-week-time text-sm ">
+                                    Hands-On Workshops With Assignment
+                                </p>
+                            </div>
+                        </a>
 
                     </div>
                 </div>
-
-
-
             </div>
-
         </div>
         <div class="text-center">
-            <div class="text-center mt-2 text-5xl font-medium text-white">WHO'S <span
-                    class="text-btn-color">IT FOR?</span></div>
-            <div class="text-center mt-3 mb-16 text-base   text-white"> 
-                For startup operators and corporate professional to B-school students and family business owner-FounderX is for anyone who <br> 
-                aspires to build a tech-driven venture soon. 
+            <div class="mx-2 text-center mt-2 text-xxl font-medium text-white faq-who">WHO'S <span
+                    class="text-btn-color">IT
+                    FOR?</span></div>
+            <div class="text-center mt-3 mb-16 text-base mx-3  text-white">
+                For startup operators and corporate professional to B-school students and family business
+                owner-FounderX is for anyone who <br>
+                aspires to build a tech-driven venture soon.
             </div>
 
         </div>
-        
         <hr class="border-btn-color">
-        
+
     </div>
 
-    <div class="h-full w-screen " id="CURRICULUM">
-
+    <div class="h-full w-full" id="CURRICULUM">
         <div class="flex justify-center items-center">
-            <div class="mx-20 mt-8 py-12 px-8 bg-bg-other border-bord border-2 h-[80%] w-[65%] rounded-lg">
+            <div class="mx-5 mt-16 py-10 px-5 bg-bg-other border-bord border-2 h-auto w-[85%] rounded-lg">
+                <div class="flex flex-wrap h-auto w-full bhot-mehnat">
+                    <div class=" mx-2  h-1/2 w-full ">
+                        <div class=" mx-2 my-2 h-auto bg-white rounded-xl">
+                            <div class="  flex justify-between px-3 py-2">
+                                <h1 class=" flex font-bold text-2xl leading-8  "> Startup Operators </h1>
+                                <img src="./src/img/Group-4397.svg" class="h-auto w-auto">
+                            </div>
+                            <div class="px-3 ">
+                                <p class="py-3 text-base font-semibold"> Who want to start thinking & excuting like a
+                                    startup founder </p>
+                            </div>
+                        </div>
 
-                <div class="flex justify-center">
-                    <div class=" mx-3 ml-12 h-[35%] w-[40%] py-5 px-5  bg-white rounded-2xl">
-                        <div class="font-bold text-2xl leading-8 flex ">
-                            <h1 class=""> Startup Operators </h1>
-                            <img src="./src/img/Group-4397.svg" class="h-16 w-16 ml-16 mr-10">
+
+
+                        <div class=" mx-2 my-2 h-auto bg-white rounded-xl">
+                            <div class="  flex justify-between px-3 py-2">
+                                <h1 class=" flex font-bold text-2xl leading-8  "> Corporate Professional </h1>
+                                <img src="./src/img/Group-4395.svg" class="h-auto w-auto">
+                            </div>
+                            <div class="px-3 ">
+                                <p class="py-3 text-base font-semibold"> Seeking exposure to early stage methods before
+                                    taking the plunge </p>
+                            </div>
                         </div>
-                        <div class="">
-                            <p class="py-4 text-base font-semibold"> Who want to start thinking & excuting like a
-                                startup founder</p>
-                        </div>
+
                     </div>
-                    <div class=" mx-3 mr-12 h-[35%] w-[40%] py-5 px-5  bg-white rounded-2xl">
-                        <div class="font-bold text-2xl leading-8 flex ">
-                            <h1 class=""> Corporate Professional </h1>
-                            <img src="./src/img/Group-4395.svg" class="h-16 w-16 ml-16 mr-10">
+                    <div class=" mx-2  h-1/2 w-full ">
+                        <div class=" mx-2 my-2 h-auto bg-white rounded-xl">
+                            <div class="  flex justify-between px-3 py-2">
+                                <h1 class=" flex font-bold text-2xl leading-8  "> Solopreneurs </h1>
+                                <img src="./src/img/Group-4394.svg" class="h-auto w-auto">
+                            </div>
+                            <div class="px-3 ">
+                                <p class="py-3 text-base font-semibold"> Wanting to transform their freelance practice
+                                    into a startup </p>
+                            </div>
                         </div>
-                        <div class="">
-                            <p class="py-4 text-base font-semibold"> Seeking exposure to early stage methods before
-                                taking the plunge </p>
+                        <div class=" mx-2 my-2 h-auto bg-white rounded-xl">
+                            <div class="  flex justify-between px-3 py-2">
+                                <h1 class=" flex font-bold text-2xl leading-8  "> Second-Chance Entrepreneurs </h1>
+                                <img src="./src/img/Group-4398.svg" class="h-auto w-auto">
+                            </div>
+                            <div class="px-3 ">
+                                <p class="py-3 text-base font-semibold"> Who is starting over and want to become a
+                                    methodical founder </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="flex justify-center">
-                    <div class=" my-5 mx-3 ml-12 h-[35%] w-[40%] py-5 px-5  bg-white rounded-2xl">
-                        <div class="font-bold text-2xl leading-8 flex ">
-                            <h1 class=""> Solopreneurs </h1>
-                            <img src="./src/img/Group-4394.svg" class="h-16 w-16 ml-16 mr-10">
-                        </div>
-                        <div class="">
-                            <p class="py-4 text-base font-semibold"> Wanting to tranform their freelance practice into a
-                                startup </p>
-                        </div>
-                    </div>
-                    <div class=" my-5 mx-3 mr-12 h-[35%] w-[40%] py-5 px-5  bg-white rounded-2xl">
-                        <div class="font-bold text-2xl leading-8 flex ">
-                            <h1 class=""> Second-Chance Entrepreneurs</h1>
-                            <img src="./src/img/Group-4398.svg" class="h-16 w-16 ml-16 mr-10">
-                        </div>
-                        <div class="">
-                            <p class="py-4 text-base font-semibold"> Who is starting over and want to become a
-                                methodical founder </p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-
         </div>
 
         <div class="flex justify-center items-center ">
-            <div
-                class=" font-bold text-base bg-btn-color w-52 mx-3 my-10 py-3 px-5 border-2 border-white rounded-lg text-center">
+           <a href="#"> <div
+                class=" font-bold text-base bg-btn-color w-52 mx-3 my-10 py-3 px-5 border-2 border-white rounded-lg text-center cursor-pointer">
                 JOIN WAITLIST </div>
         </div>
+    </a>
 
         <div class="flex justify-center items-center">
-            <div class="mx-20 my-8  py-10 px-8 bg-bg-other border-bord border-2 h-[80%] w-[65%] rounded-lg ">
+            <div class="mx-5 my-8  py-10 px-8 bg-bg-other border-bord border-2 h-[80%] w-[85%] rounded-lg ">
                 <div class="text-center">
                     <div class="text-center mb-1 text-4xl font-bold text-btn-color">HOW IS THE 12 WEEK JOURNEY </div>
                     <div class="text-center mt-2 text-4xl font-bold text-white">STRUCTURED? </div>
@@ -444,10 +490,12 @@
                 </div>
 
                 <div class="flex justify-center  items-center">
-                    <div
-                        class=" mr-12 ml-12 h-[35%] w-[30%] py-3 px-2 border-btn-color border-2 bg-white rounded-lg font-semibold text-sm text-center flex ">
-                        <box-icon name='download' class="mt-[-2px]"></box-icon> &nbsp; DOWNLOAD FULL CURRICULUM
+                   <a href="#"> <div
+                        class="   py-3 px-2 border-bord border-2 bg-white rounded-lg font-semibold text-sm text-center flex cursor-pointer">
+                        <box-icon name='download' class="mt-[-2px] hidden down-logo"></box-icon> &nbsp; DOWNLOAD FULL
+                        CURRICULUM
                     </div>
+                </a>
                 </div>
 
 
@@ -459,7 +507,10 @@
 
     </div>
 
-   
+
+
+
+
 
 </body>
 
